@@ -48,6 +48,9 @@ const user = {
 let cid = "1";
 // let customerId = <number>cid
 let customerId = cid;
-console.log(Direction2.Left);
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
 // will not reassign a variable because it is of a different type
 // id = '5';
