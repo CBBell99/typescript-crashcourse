@@ -3,7 +3,7 @@
 let id = 5;
 let company = "Belltron 3030";
 let isPublished = true;
-// any type can be any type of value 
+// any type can be any type of value
 let x = "hello";
 x = true;
 let age;
@@ -40,6 +40,10 @@ var Direction2;
     Direction2["Left"] = "Left";
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
+const user = {
+    id: 1,
+    name: "Chris",
+};
 console.log(Direction2.Left);
 // will not reassign a variable because it is of a different type
 // id = '5';
