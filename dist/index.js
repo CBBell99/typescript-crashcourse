@@ -52,5 +52,9 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
+// Void function
+function log(message) {
+    console.log(message);
+}
 // will not reassign a variable because it is of a different type
 // id = '5';
