@@ -92,14 +92,19 @@ const add: MathFunc = (x: number, y: number): number => x + y;
 
 // Classes
 class Person {
-  id: number;
+  private id: number;
   name: string;
 
   constructor(id: number, name: string) {
     this.id = id;
     this.name = name;
   }
+
+  register() {
+    return `${this.name} is now registered`
+  }
 }
 
 const brad = new Person(1, "Brad");
-console.log(brad.name);
+
+console.log(brad.register());
