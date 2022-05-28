@@ -84,8 +84,11 @@ const user1: UserInterface = {
   name: "Chris",
 };
 
-type Point = number | string
-const p1: Point = 1;
+interface MathFunc {
+  (x: number, y: number): number
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y;
 
 // will not reassign a variable because it is of a different type
 // id = '5';

@@ -60,6 +60,6 @@ const user1 = {
     id: 1,
     name: "Chris",
 };
-const p1 = 1;
+const add = (x, y) => x + y;
 // will not reassign a variable because it is of a different type
 // id = '5';
