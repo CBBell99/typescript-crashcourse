@@ -1,29 +1,28 @@
-"use strict";
 // need to assign a type to the variable
-let id = 5;
-let company = "Belltron 3030";
-let isPublished = true;
+var id = 5;
+var company = "Belltron 3030";
+var isPublished = true;
 // any type can be any type of value
-let x = "hello";
+var x = "hello";
 x = true;
-let age;
+var age;
 age = 20;
-let ids = [1, 2, 3, 4, 5];
+var ids = [1, 2, 3, 4, 5];
 // will not work
 // ids.push("Hello")
 // Will work
-let arr = [1, true, "hello"];
+var arr = [1, true, "hello"];
 // Tuple
-let person = [1, "Chris", false];
+var person = [1, "Chris", false];
 // Tuple array
-let employee;
+var employee;
 employee = [
     [1, "Chris"],
     [2, "Brad"],
     [1, "John"],
 ];
 // Union allow to different types of values
-let pid;
+var pid;
 pid = 22;
 // Enum.  If first value is 1, then the next value will be 2, and so on
 var Direction1;
@@ -40,14 +39,14 @@ var Direction2;
     Direction2["Left"] = "Left";
     Direction2["Right"] = "Right";
 })(Direction2 || (Direction2 = {}));
-const user = {
+var user = {
     id: 1,
-    name: "Chris",
+    name: "Chris"
 };
 // Type Assertion 
-let cid = "1";
+var cid = "1";
 // let customerId = <number>cid
-let customerId = cid;
+var customerId = cid;
 // Functions
 function addNum(x, y) {
     return x + y;
@@ -56,17 +55,18 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
-const user1 = {
+var user1 = {
     id: 1,
-    name: "Chris",
+    name: "Chris"
 };
-const add = (x, y) => x + y;
+var add = function (x, y) { return x + y; };
 // Classes
-class Person {
-    constructor(id, name) {
+var Person = /** @class */ (function () {
+    function Person(id, name) {
         this.id = id;
         this.name = name;
     }
-}
-const brad = new Person(1, "Brad");
+    return Person;
+}());
+var brad = new Person(1, "Brad");
 console.log(brad.name);
