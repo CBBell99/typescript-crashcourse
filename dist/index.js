@@ -72,4 +72,11 @@ class Person {
     }
 }
 const brad = new Person(1, "Brad");
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(1, "Chris", "Software Engineer");
 console.log(brad.register());
